@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+body {
+  font-family: 'Poppins';
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  background-position: cover;
+  box-sizing: border-box;
+}
+a {
+    color: yellow;
+    text-decoration: none;
+  }
+header {
+  width: 1140px;
+  max-width: 80%;
+  margin: auto;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 100;
+  justify-content: center;
+}
+header a {
+  margin-right: 10px;
+}
+.animal{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto;
+  }
+  .aira{
+    width: 100px;  /* Set width to 300 pixels */
+    height: 10px; /* Set height to 200 pixels */
+  }
+  .animal h1{
+    font-size: 50px;
+    color: #fff;
+    margin-bottom: 10px;
+    position: relative;
+  }
+  .animal h1::after{
+    content: "";
+    width: 100%;
+    position: relative;
+    height: 4px;
+    display: block;
+    margin: 0 auto;
+    background-color: yellow;
+  }
+  .kingdom h2{
+    font-size: 50px;
+    color: #fff;
+    margin-bottom: 25px;
+    position: relative;
+  }
+  .kingdom h2::after{
+    content: "";
+    width: 100%;
+    position: relative;
+    height: 3px;
+    display: block;
+    margin: 0 auto;
+    background-color: yellow;
+  }
+  .animal p{
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 35px;
+  }
+  .drum{
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 20px;
+  }
+  .kingdom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .aira{
+    width: 1100px;  /* Set width to 300 pixels */
+    height: 500px; /* Set height to 200 pixels */
+  
+  }
+  .kingdom-image{
+    flex: 1;
+    margin-right: 40px;
+    overflow: hidden;
+  }
+  .kingdom-image img{
+   max-width: 100%;
+   height: auto;
+   display: block;
+   transition: 0.5s ease;
+  }
+  .kingdom-image img:hover{
+    transform: scale(1.2);
+  }
+  .kingdom-content{
+    flex: 1;
+  }
+  .kingdom-content h2{
+    font-size: 23px;
+    color: #fff;
+    margin-bottom: 15px;
+  }
+  .kingdom-content p{
+    font-size: 18px;
+    color: #fff;
+    line-height: 1.5;
+  }
+  .kingdom-content .read-more{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: yellow;
+    color: black;
+    font: 19px;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-top: 15px;
+    transition: 0.3s ease ;
+  }
+  .kingdom-content .read-more:hover{
+    background-color: white;
+    color: #000;
+  }
+  @media screen and (max-width: 768px){
+    .animal{
+      padding: 0px 20px;
+    }
+    .animal h1{
+      font-size: 36px;
+    }
+    .animal p{
+      font-size: 17px;
+      margin-bottom: 0px;
+    }
+    .drum{
+      padding: 0px;
+    }
+    .kingdom{
+      flex-direction: column;
+      padding: 20px;
+    }
+    .kingdom-image{
+      margin-right: 0px;
+      margin-bottom: 20px;
+    }
+    .kingdom-content{
+      padding: 0px;
+      font-size: 16px;
+    }
+    .kingdom-content .read-more{
+      font-size: 16px;
+    }
+  }
